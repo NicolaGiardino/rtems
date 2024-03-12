@@ -178,6 +178,11 @@ install:
 - destination: ${BSP_INCLUDEDIR}/bsp
   source:
   - bsps/arm/stm32h7/include/bsp/irq.h
+  - bsps/arm/stm32h7/include/bsp/can-drv.h
+  - bsps/arm/stm32h7/include/bsp/stm32h7_fdcan.h
+  - bsps/arm/stm32h7/include/bsp/iwdg.h
+  - bsps/arm/stm32h7/include/bsp/stm32h7_iwdg.h
+  - bsps/arm/stm32h7/include/bsp/stm32h7_spi.h
 - destination: ${BSP_INCLUDEDIR}/stm32h7
   source:
   - bsps/arm/stm32h7/include/stm32h7/hal.h
@@ -351,4 +356,10 @@ source:
 - bsps/shared/start/gettargethash-default.c
 - bsps/shared/start/sbrk.c
 - bsps/shared/start/stackalloc.c
+- bsps/arm/stm32h7/iwdg/iwdg.c
+- bsps/arm/stm32h7/iwdg/stm32h7_iwdg.c
+- bsps/arm/stm32h7/fdcan/can-bus.c
+- bsps/arm/stm32h7/fdcan/can-drv.c
+- bsps/arm/stm32h7/fdcan/stm32h7_fdcan.c
+- bsps/arm/stm32h7/spi/stm32h7_spi.c
 type: build
