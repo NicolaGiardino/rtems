@@ -32,4 +32,4 @@
 #include <stm32h7/hal.h>
 
 const uint32_t stm32h7_config_pwr_regulator_voltagescaling =
-  PWR_REGULATOR_VOLTAGE_SCALE0;
+    PWR_REGULATOR_VOLTAGE_SCALE1; // PWR_REGULATOR_VOLTAGE_SCALE0;
